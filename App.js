@@ -1,33 +1,50 @@
-import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
+import 'react-native-gesture-handler';
+import React, { useEffect } from 'react'
+
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import OnBoardingStack from './src/screens/onBoardingStack/onBoardingStack.js';
+
+import { Routes } from './src/screens/routes';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistStore } from 'redux-persist';
+import { Provider } from 'react-redux';
+import store from './app/store'
+import { LoggedIn } from './app/useStore'
+
+import { LogBox } from 'react-native';
+import AppScreen from './src/screens/mainStack/appScreen';
+
+const AppStack = createStackNavigator();
+
+const AppNavigator = () => {
 
 
+  LogBox.ignoreAllLogs()
 
-const App = () => {
+  const loggedIn = LoggedIn()
   return (
-    <SafeAreaView >
-      <Text>This is FaceCom</Text>
-    </SafeAreaView>
-  );
-};
+    <AppStack.Navigator initialRouteName={loggedIn ? Routes.App : Routes.onBoarding}>
+      <AppStack.Screen name={Routes.onBoarding} component={OnBoardingStack} options={{ headerShown: false }} />
+      <AppStack.Screen name={Routes.App} component={AppScreen} options={{ headerShown: true }} />
+    </AppStack.Navigator>
+  )
+}
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+function App() {
+
+  let persistor = persistStore(store);
+
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <NavigationContainer>
+          <AppNavigator />
+        </NavigationContainer>
+      </PersistGate>
+    </Provider>
+  );
+}
+
 
 export default App;
