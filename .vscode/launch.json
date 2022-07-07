@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+      {
+        "command": "npx react-native run-ios",
+        "name": "Run iOS App",
+        "request": "launch",
+        "type": "node-terminal"
+      }
+    ]
+}

@@ -13,7 +13,7 @@ import store from './app/store'
 import { LoggedIn } from './app/useStore'
 
 import { LogBox } from 'react-native';
-import AppScreen from './src/screens/mainStack/appScreen';
+import MainTabNavigator from './src/screens/mainStack/mainTab.js';
 
 const AppStack = createStackNavigator();
 
@@ -26,7 +26,7 @@ const AppNavigator = () => {
   return (
     <AppStack.Navigator initialRouteName={loggedIn ? Routes.App : Routes.onBoarding}>
       <AppStack.Screen name={Routes.onBoarding} component={OnBoardingStack} options={{ headerShown: false }} />
-      <AppStack.Screen name={Routes.App} component={AppScreen} options={{ headerShown: true }} />
+      <AppStack.Screen name={Routes.App} component={MainTabNavigator} options={{ headerShown: false }} />
     </AppStack.Navigator>
   )
 }

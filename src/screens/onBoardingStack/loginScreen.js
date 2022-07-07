@@ -9,16 +9,17 @@ export default function LoginScreen({ navigation }) {
     const [password, setPassword] = useState("")
 
     const login = () => {
-        if (email.trim() !== "" && password.trim() !== "") {
+        // if (email.trim() !== "" && password.trim() !== "") {
 
-            const data = {
-                email: email,
-                password: password
-            }
-            console.log(data)
-        } else {
-            Alert.alert('Login', 'Please fill all the fields !')
-        }
+        //     const data = {
+        //         email: email,
+        //         password: password
+        //     }
+        //     console.log(data)
+        // } else {
+        //     Alert.alert('Login', 'Please fill all the fields !')
+        // }
+        navigation.replace(Routes.App)
     }
 
     return (
