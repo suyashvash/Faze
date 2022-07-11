@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "194954803848",
+    "project_id": "personal-projects-react-native",
+    "storage_bucket": "personal-projects-react-native.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194954803848:android:4aa90c5fcf3235056a3d3d",
+        "android_client_info": {
+          "package_name": "com.suyash.faze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194954803848-u5r7qrv1eahu9j44der6un071qsdf4u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiD2Kzk1mymAAyEJSZ1A1fmFtdl6PBpmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194954803848-u5r7qrv1eahu9j44der6un071qsdf4u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-package com.facecom.newarchitecture;
+package com.faze.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.facecom.BuildConfig;
-import com.facecom.newarchitecture.components.MainComponentsRegistry;
-import com.facecom.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.faze.BuildConfig;
+import com.faze.newarchitecture.components.MainComponentsRegistry;
+import com.faze.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
