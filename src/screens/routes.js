@@ -8,6 +8,7 @@ export const Routes = {
             myContactsScreen:"My Contacts",
             videoCallScreen:"Video call with contact x",
             chatSection:"Chat section with contact x",
+            profileViewScreen:"Profile"
 
         },
         randomVideoCallStack:{

@@ -3,7 +3,7 @@ import { View,Image, StyleSheet,Text,TouchableOpacity,ScrollView } from "react-n
 import userAvatar from '../../../utils/userAvatar.png'
 import {Colors} from '../../../utils/colors'
 
-export default function ProfileScreen(){
+export default function ProfileViewScreen(){
 
 
 
@@ -27,15 +27,18 @@ export default function ProfileScreen(){
                 <Text style={styles.details}>Hi, I am a Software Engineer who just copy pastes the code from diff sites and do Caffiene drugs </Text>
                 
                 
-                <Text style={[styles.heading,{marginTop:20}]}>Settings</Text>
+                <Text style={[styles.heading,{marginTop:20}]}>Options</Text>
                
                <TouchableOpacity style={styles.button} >
-                    <Text style={{paddingLeft:10,  textAlign: 'left', color: 'white', fontSize: 18 }}>Reset Password</Text>
+                    <Text style={{paddingLeft:10,  textAlign: 'left', color: 'white', fontSize: 18 }}>Make Video call</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={[styles.button]} >
-                <Text style={{paddingLeft:10, textAlign: 'left', color: 'white', fontSize: 18 }}>Logout</Text>
+                <TouchableOpacity style={styles.button} >
+                    <Text style={{paddingLeft:10,  textAlign: 'left', color: 'white', fontSize: 18 }}>Block</Text>
                 </TouchableOpacity>
+
+
+             
               
                 </View>
 
