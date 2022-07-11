@@ -1,5 +1,5 @@
 {
-  "name": "faze",
+  "name": "facecom",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,7 +12,6 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.16",
     "@react-native-community/masked-view": "^0.1.11",
-    "@react-native-firebase/app": "^15.1.1",
     "@react-navigation/bottom-tabs": "^6.3.2",
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/stack": "^6.0.11",

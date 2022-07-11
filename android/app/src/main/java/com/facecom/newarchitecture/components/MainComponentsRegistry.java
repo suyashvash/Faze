@@ -1,4 +1,4 @@
-package com.faze.newarchitecture.components;
+package com.facecom.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
