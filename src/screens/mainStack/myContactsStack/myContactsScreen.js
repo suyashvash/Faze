@@ -27,7 +27,7 @@ export default function MyContactsScreen({navigation}){
             <ScrollView style={styles.scrollStyle}>
                 {
                     contactListD.map((item,index)=>(
-                        <TouchableOpacity style={styles.contactSlab} onPress={()=>navigation.navigate(Routes.tabs.myContactStack.profileViewScreen)}>
+                        <TouchableOpacity key={index} style={styles.contactSlab} onPress={()=>navigation.navigate(Routes.tabs.myContactStack.profileViewScreen)}>
                         <Image source={userAvatar} style={{width:40,borderRadius:50,height:40}}/>
                         <View style={{paddingLeft:10}}>
                             <Text style={{fontSize:16}}>{item.name}</Text>

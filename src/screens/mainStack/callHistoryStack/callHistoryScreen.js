@@ -26,7 +26,7 @@ export default function CallHistoryScreen(){
             <ScrollView style={styles.scrollStyle}>
                 {
                     historyListD.map((item,index)=>(
-                        <View style={styles.contactSlab}>
+                        <View key={index} style={styles.contactSlab}>
                         {/* <Image source={userAvatar} style={{width:40,borderRadius:50,height:40}}/> */}
                       
                         <View >

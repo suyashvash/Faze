@@ -3,8 +3,8 @@
     "configurations": [
 
       {
-        "command": "npx react-native run-ios",
-        "name": "Run iOS App",
+        "command": "expo start --ios",
+        "name": "Run EXPO iOS App",
         "request": "launch",
         "type": "node-terminal"
       }
